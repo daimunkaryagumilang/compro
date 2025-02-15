@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daimun Karya Gemilang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --maroon: #800000;
+            --dark-red: #660000;
+            --light-red: #ffcccc;
+            --off-white: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--off-white);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            padding: 20px 50px;
+            background: rgba(166, 36, 36, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--maroon);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-red);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('bg.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Sections Common Style */
+        section {
+            padding: 100px 50px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--dark-red);
+            margin-bottom: 50px;
+        }
+
+        /* About Section */
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Services Section */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        /* Portfolio Gallery */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1/1;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        /* Media Partners */
+        .partners-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 30px;
+        }
+
+        .partner-logo {
+            height: 60px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            background: var(--maroon);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+            
+            .about-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Daimun Karya Gemilang</div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#services">Layanan</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Kontak</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+       
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Tentang Kami</h2>
+        <div class="about-container">
+            <img src="lg.png" alt="About Us" class="about-image">
+            <div>
+                <h3></h3>
+                <p> Kami hadir sebagai mitra terpercaya dalam segala hal 
+                    kebutuhan manajemen event, promosi, serta industri 
+                    kreatif lainnya. kami memahami bahwa setiap 
+                    perusahaan atau instansi memerlukan rekanan yang 
+                    dapat dipercaya serta memiliki integritas dan totalitas 
+                    dalam mengerjakan pekerjaan dibidang jasa dan 
+                    produksi. dan tentunya kami sudah terdaftar secara legal
+                     sebagai perusahaan yang taat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title"> PRODUK & LAYANAN </h2>
+                <div class="service-grid">
+            <!-- Repeat for each service -->
+            <div class="service-card">
+                <h3> Event Planner & Organizer</h3>
+                <p>Handling sebuah event atau acara dari mulai brainstorming ide 
+                    dengan client / atau rekanan, membuat konsep, perencanaan 
+                    kebutuhan, desain, hingga eksekusi, dari mulai team show hingga 
+                    team floor. Launching, Exhibition, Activation, Gathering, Opening, 
+                    Anniversary dan event lainnya merupakan salah satu keahlian utama 
+                    kami dalam industri ini</p>
+            </div>        
+            <div class="service-card">
+                <h3>Event Production</h3>
+                <p> Dibalik event atau acara yang terlihat apik terdapat spesialis 
+                    team yang mengerjakan kebutuhan produksi seperti 
+                    panggung, booth, wall of fame, gate dan bentuk produksi 
+                    lainnya. dan spesialis itu adalah kami salah satunya.</p>
+            </div>
+            <div class="service-card">
+                <h3>Tour Organizer</h3>
+                <p> Merencanakan perjalanan wisata atau outing tentu saja akan 
+                    lebih mudah apabila memiliki rekanan yang dapat menyiapkan 
+                    dari mula transportasi, akomodasi, hingga itinerary. sehingga 
+                    perjalanan akan terasa mudah dan menyenangkan. kami adalah 
+                    mitra yang baik dalam hal ini.</p>
+            </div>
+            <div class="service-card">
+                <h3>Adertising & Agency</h3>
+                <p>  Promosi merupakan bagian penting dalam keberlangsungan divisi 
+                    marketing dari sebuah brand atau instansi. ada banyak cara 
+                    menyampaikan awarness dari sebuah brand selain cara konvensional, 
+                    bisa juga disampaikan dengan ide kreatif dan unik.</p>
+            </div>           
+            <!-- Add other services -->
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title">Portofolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="1.png" alt="Event 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="2.png" alt="Event 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="3.png" alt="Event 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="4.png" alt="Event 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="p1.png" alt="Event 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="p2.png" alt="Event 1">
+            </div>
+            <!-- Add 7 more portfolio items -->
+        </div>
+    </section>
+
+    <section id="partners">
+        <h2 class="section-title">Media Partner</h2>
+        <div class="partners-container">
+            <img src="lg1.png" alt="Partner 1" class="partner-logo">
+            <img src="lg2.png" alt="Partner 1" class="partner-logo">
+            <img src="lg3.png" alt="Partner 1" class="partner-logo">
+            <img src="lg4.png" alt="Partner 1" class="partner-logo">
+            <img src="lg5.png" alt="Partner 1" class="partner-logo">
+            <!-- Add more partner logos -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div>
+                <h3>Marketing Representative</h3>
+                <p><i class="fas fa-phone"></i> Azis Moeslim</p>
+                <p><i class="fas fa-phone"></i>  081313419125 - 0896-9958-7111</p>
+                <p><i class="fas fa-envelope"></i> daimunkaryagemilang@gmail.com</p>
+                
+            </div>
+            <div>
+                <h3>Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  Jalan Kesunean Kota Cirebon,  Jawa Barat, Indonesia</p>
+                <!-- Add social media links -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add hover effect to portfolio items
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseover', () => {
+                item.querySelector('img').style.transform = 'scale(1.1)';
+            });
+            item.addEventListener('mouseout', () => {
+                item.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
